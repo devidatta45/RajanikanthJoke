@@ -19,7 +19,9 @@ class RajniController extends Controller {
     val result = ExternalService.callRajniJoke("Rajnikanth", "Sir")
     result.map { res =>
       Ok(com.rajni.views.html.joke(res.value.joke))
-    }
+    }.recover({
+      case ex => Ok(com.rajni.views.html.joke("No Joke Available:Server down"))
+    })
   }
 }
 

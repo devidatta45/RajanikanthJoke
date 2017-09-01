@@ -1,0 +1,1 @@
+GET    /            com.rajni.controllers.RajniController.getJoke

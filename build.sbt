@@ -1,5 +1,5 @@
 
-name := "Rajanikanth Joke"
+name := "rajanikanth-joke"
 
 version := "1.0"
 

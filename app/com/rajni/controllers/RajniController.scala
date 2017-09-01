@@ -16,7 +16,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 @Singleton
 class RajniController extends Controller {
   val getJoke = Action.async { request =>
-    val result = ExternalService.callRajniJoke("Rajnikanth", "Kanth")
+    val result = ExternalService.callRajniJoke("Rajnikanth", "Sir")
     result.map { res =>
       Ok(com.rajni.views.html.joke(res.value.joke))
     }

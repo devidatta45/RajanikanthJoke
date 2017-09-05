@@ -5,6 +5,8 @@ version := "1.0"
 
 scalaVersion := "2.11.11"
 
+herokuAppName in Compile := "rajni-app-1111"
+
 val akka = "2.4.17"
 val json4sVersion = "3.4.0"
 val mongo = "0.12.1"
